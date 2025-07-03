@@ -7,10 +7,17 @@ body {
   margin: 0;
   background-image:url('https://cdn2.unrealengine.com/egs-grandtheftautovicecitythedefinitiveedition-rockstargames-g1a-00-1920x1080-a93053f8548a.jpg');
 }
+@keyframes tituloColorido {
+  0%   { color: #ffffff; }
+  25%  { color: #00f7ce; }
+  50%  { color: #ff4081; }
+  75%  { color: #ffeb3b; }
+  100% { color: #ffffff; }
+}
 
-/* Título principal */
 h1 {
-  color: #ffffff;
+  animation: tituloColorido 5s infinite ease-in-out;
+
   margin-bottom: 40px;
   font-size: 2em;
 }
@@ -29,7 +36,7 @@ h1 {
   border-radius: 15px;         /* Bordas arredondadas */
   width: 250px;
   padding: 25px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-shadow: 0 10px 25px rgba(253, 253, 253, 0.1); /* Sombra suave */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animações suaves */
 }
 
